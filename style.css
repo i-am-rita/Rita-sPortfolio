@@ -89,7 +89,7 @@ section.home {
 }
 
 .toggle.active {
-  background: brown url(../images/Xicon.png);
+  background: brown url(../images/Xicon.png) ;
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
