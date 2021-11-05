@@ -1,0 +1,133 @@
+
+body{
+    /* background-color: yellow; */
+    min-height: 100vh;
+    display: flex;
+    /* overflow: hidden;/ */
+    /* font-size: 15px; */
+}
+
+/* header .navbar{
+    z-index: 1;
+} */
+.main{
+    max-width: 90%;
+    border-radius: 8px;
+    background-color: palegoldenrod;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* margin: 9rem 9rem; */
+    overflow: hidden;
+}
+
+.profilepic{
+    width: 100%;
+    min-height: 16rem;
+    filter: brightness(29%) sepia(100%) hue-rotate(234deg) saturate(110%) contrast(.8);
+    overflow: hidden;
+    /* margin: 0;
+    padding: 0; */
+}
+
+aside{
+    overflow: hidden;
+}
+
+article{
+    /* display: f; */
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.inner-container{
+    color: black;
+    /* background-color: hsl(244, 38%, 16%); */
+    padding: 2rem;
+    /* font-size: 20px; */
+    /* margin: 2.5rem; */
+}
+
+.inner-container h1{
+    font-size: 1.75rem;
+    color: black;
+}
+
+.inner-container p{
+    /* font-size: .9rem; */
+    line-height: 2rem;
+    /* font-weight: 400px; */
+}
+
+/* .inner-container span{
+    color: hsl(277, 64%, 61%);
+} */
+
+.lists p{
+text-transform: uppercase;
+font-size: .7rem;
+color: gray;
+}
+
+.lists h2{
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+    color: whitesmoke
+}
+
+.lists > div{
+    line-height: .5;
+    margin: 2rem 0;
+}
+
+/* Media Query */
+@media screen and (min-width: 880px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'article aside';
+        max-width: 80%;
+        overflow:hidden;
+    }
+
+    aside{
+        grid-area: aside;
+        min-height: 100%;
+    }
+
+    article{
+        grid-area: article;
+        text-align: left;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 4.5rem 1rem;
+    }
+
+    img{
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .lists{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding-right: 1rem;
+        flex: 1;
+    }
+
+    .lists p{
+        font-size: .6rem;
+        margin-top: -1.0rem;
+    }
+
+    .inner-container{
+        margin-bottom: .5rem;
+        padding: 0;
+    }
+
+    .inner-container h1{
+        font-size: 2rem;
+
+    }
+}
